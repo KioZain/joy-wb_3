@@ -1,0 +1,6 @@
+@import "reset.css";
+@import "1920.css";
+@font-face {
+  font-family: 'pixelcyr_normal';
+  src: url('../fonts/pixelcyr_normal.ttf') format("truetype");
+}
