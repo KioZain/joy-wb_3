@@ -7,7 +7,6 @@ body{
   margin: 1.875rem 3.125rem;
 }
 .grid-wrapper > div {
-  background-color: white;
   border: 6px solid #000000;
 }
 /* Первая строка */
@@ -16,52 +15,166 @@ body{
   position: relative;
   display: flex;
   flex-direction: column;
-  height: 45vh;
+  height: 58.41vh;
+  width: 41.25vw;
+  background-color:#FFFFFF;
+}
+.i1-content{
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.i1-quizz_container{
+  width: 6.5vw;
+  height: 12.8vh;
+  position: relative;
+  margin: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.i1-quizz{
+  background-image: url('../images/quizz.svg');
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  position: relative;
+  width: 4.16vw;
+  height: 8.25vh;
+}
+.i1-quizz:hover{
+  transition: all 0.4s ease-out;
+  background-image: url('../images/quizz_hover.svg');
+}
+.memory-game-icon_calmness{
+  width: 6.5vw;
+  height: 12.8vh;
+  position: relative;
+  margin: 12px;
+  background-image: url('../images/memory-game-icon_calmness.svg');
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+}
+.memory-game-icon_cloud{
+  width: 6.5vw;
+  height: 12.8vh;
+  position: relative;
+  margin: 12px;
+  background-image: url('../images/memory-game-icon_cloud.svg');
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+}
+.memory-game-icon_sun{
+  width: 6.5vw;
+  height: 12.8vh;
+  position: relative;
+  margin: 12px;
+  background-image: url('../images/memory-game-icon_sun.svg');
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+}
+.memory-game-icon_mountain{
+  width: 6.5vw;
+  height: 12.8vh;
+  position: relative;
+  margin: 12px;
+  background-image: url('../images/memory-game-icon_mountain.svg');
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+}
+.memory-game-icon_flover{
+  width: 6.5vw;
+  height: 12.8vh;
+  position: relative;
+  margin: 12px;
+  background-image: url('../images/memory-game-icon_flover.svg');
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+}
+.memory-game-icon_forest{
+  width: 6.5vw;
+  height: 12.8vh;
+  position: relative;
+  margin: 12px;
+  background-image: url('../images/memory-game-icon_forest.svg');
+  background-repeat: no-repeat;
+  background-size: auto 100%;
 }
 .item02 {
   grid-column: 5/10;
   position: relative;
   display: flex;
   flex-direction: column;
+  height: 58.41vh;
+  width: 51vw;
+  background-color:#0CCC70;
 }
 /*Вторая строка*/
 .item03 {
   grid-column: 1/5;
   height:  60vh;
   grid-row: 1/10;
+  height: 77vh;
+  width: 41.25vw;
+  background-color:#0CCC70;
 }
 .item04 {
   grid-column: 5/10;
   grid-row: 1/6;
+  height:  44.2vh;
+  width: 51vw;
+  background-color:#FFFFFF;
 }
 .item05 {
   grid-column: 5/10;
   grid-row: 6/10;
+  height: 29.5vh;
+  width: 51vw;
+  background-color:#0CCC70;
 }
 /* Третья строка */
 .item06 {
   grid-column: 1/4;
   height: 35vh;
+  width: 30.5vw;
+  background-color:#FFFFFF;
 }
 .item07 {
   grid-column: 4/10;
+  height: 35vh;
+  width: 61.7vw;
+  background-color:#FFFFFF;
 }
 /* Четвертая строка */
 .item08 {
   grid-column: 1/6;
   height: 55vh;
+  width: 61.7vw;
+  background-color:#0CCC70;
 }
 .item09 {
   grid-column: 6/10;
+  height: 55vh;
+  width: 30.5vw;
+  background-color:#FFFFFF;
 }
 /* Пятая строка */
 .item10 {
   grid-column: 1/6;
   height: 55vh;
+  width: 61.7vw;
+  background-color:#FFFFFF;
 }
 .item11 {
   grid-column: 6/10;
+  height: 55vh;
+  width: 30.5vw;
+  background-color:#FFFFFF;
 }
+/* Плашка */
 .window-bar {
   width: 100%;
   background-color: #454444;
@@ -74,38 +187,22 @@ body{
   font-size: 2.813rem;
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
-}
-.test{
-  background-color: red;
-  position: relative;
-}
-.test2{
-  width: 100%;
-  height: 100%;
-  background-color: yellow;
-  position: relative;
+  justify-content: flex-start;
 }
 /* Navbar-Icons */
-.icon-wrapper{
-  display: flex;
-  flex-direction: row;
-  gap: 0.938rem;
-  display: flex;
-  flex-direction: row;
 }
 .hide-icon{
-  width: 2.5vw;
-  height: 3.5vh;
+  width: 3vw;
+  height: 4vh;
   background-image: url('../images/hide.svg');
   background-repeat: no-repeat;
-  background-size: auto 100%;
-  }
+}
 .close-icon{
-  width: 2.5vw;
-  height: 3.5vh;
+  width: 2.604vw;
+  height: 5.15vh;
   background-image: url('../images/close.svg');
   background-repeat: no-repeat;
+  background-size: auto 100%;
 }
 /* display inline block
 float (left right)*/
