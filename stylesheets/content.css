@@ -408,10 +408,12 @@ h2{
 }
 .running-row{
   background-image: url('../images/running-row.svg');
-  width:3593px;
-  height: 171px;
+  width:187.135vw;
+  height: 8.906vw;
   position: absolute;
   animation: rowmove 3s linear infinite;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
 }
 .i7-content{
   display: flex;

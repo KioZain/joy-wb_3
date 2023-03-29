@@ -40,7 +40,7 @@ $(document).ready(function() {
 		}
 	});
 // Question 01
-	$(".get1").click(function openPop() {
+	$(".get1").click(function open() {
 		$(".i1-content").addClass("d-none");
 		$(".alt1-content").toggleClass("d-none")
 	});
@@ -53,7 +53,11 @@ $(document).ready(function() {
 	$(".closebtn").click(function closePop() {
 		$(".popup").toggleClass("d-none");
 	});
-
+//Window 04
+	$(".get4").click(function open() {
+		$(".i4-content").toggleClass("d-none");
+		$(".alt4-content").toggleClass("d-none")
+	})
 
 
 // Windows 10 ))))))))
