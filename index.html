@@ -5,95 +5,257 @@
     <title>Джой</title>
     <link rel="stylesheet" href="stylesheets/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="js/main.js"></script>
   </head>
   <body>
-  <div class="grid-wrapper">
-      <!-- Первая строка -->
-      <div class="item01">
-        <div class="window-bar">
-          <p>Воспоминания</p>
-            <div class="hide-icon"></div>
-            <div class="close-icon"></div>
-        </div>
-        <div class="i1-content">
-          <div class="memory-game-icon_sun"></div>
-          <div class="memory-game-icon_cloud"></div>
-          <div class="memory-game-icon_cloud"></div>
-          <div class="memory-game-icon_cloud"></div>
-          <div class="i1-quizz_container">
-            <div class="i1-quizz"></div>
-          </div>
-          <div class="memory-game-icon_mountain"></div>
-          <div class="memory-game-icon_mountain"></div>
-          <div class="memory-game-icon_mountain"></div>
-          <div class="memory-game-icon_calmness"></div>
-          <div class="memory-game-icon_calmness"></div>
-          <div class="memory-game-icon_forest"></div>
-          <div class="memory-game-icon_flover"></div>
-          <div class="memory-game-icon_forest"></div>
-          <div class="memory-game-icon_forest"></div>
-          <div class="memory-game-icon_forest"></div>
-        </div>
-      </div>
-      <!-- Блок 2 -->
-      <div class="item02">
-        <div class="window-bar">
-          <p>OШИ10101_22.10</p>
-        </div>
-      </div>
-  </div>
-  <!-- Вторая строка-->
-  <div class="grid-wrapper">
-    <div class="item03">
-      <div class="window-bar">
-        <p>Оцени своё состояние</p>
+    <div class="popup d-none">
+      <div class="popcontent">
+        <p p class="hgrey">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et porro magnam quo fugiat,
+          incidunt facilis, dolorum eius, cumque harum vitae assumenda.</p>
+          <div class="closebtn hov"><p class="hgrey">Закрыть</p></div>
       </div>
     </div>
+  <div class="grid-wrapper">
+<!-- Блок01 -->
+    <div class="item01">
+      <div class="window-bar">
+        <p>Воспоминания</p>
+        <div class="icon-wrapper">
+          <div class="hide-icon"></div>
+          <div class="close-icon"></div>
+        </div>
+      </div>
+      <div class="alt1-content d-none">
+        <p>Стоит поискать получше</p>
+        <div class="i1-quizz_container">
+          <div class="reboot hov"></div>
+        </div>
+      </div>
+      <div class="i1-content ">
+        <div class="i1-row">
+          <div class="memory-game-icon flower"></div>
+          <div class="memory-game-icon flower"></div>
+          <div class="memory-game-icon flower"></div>
+          <div class="memory-game-icon flower"></div>
+          <div class="i1-quizz_container">
+            <div class="question get1 hov"></div>
+          </div>
+        </div>
+        <div class="i1-row">
+          <div class="memory-game-icon flower"></div>
+          <div class="memory-game-icon flower"></div>
+          <div class="memory-game-icon flower"></div>
+          <div class="memory-game-icon flower"></div>
+          <div class="memory-game-icon flower"></div>
+        </div>
+        <div class="i1-row">
+          <div class="memory-game-icon flower"></div>
+          <div class="memory-game-icon flower"></div>
+          <div class="memory-game-icon flower"></div>
+          <div class="memory-game-icon flower"></div>
+          <div class="memory-game-icon flower"></div>
+        </div>
+      </div>
+    </div>
+  <!-- Блок 02 -->
+    <div class="item02">
+      <div class="window-bar">
+        <p>OШИ10101_22.10</p>
+        <div class="icon-wrapper">
+          <div class="hide-icon"></div>
+          <div class="close-icon"></div>
+        </div>
+      </div>
+      <div class="i2-content">
+        <div class="bug1"></div>
+        <div class="bug2"></div>
+        <div class="bug3"></div>
+        <div class="bug4"></div>
+        <div class="bug5"></div>
+        <div class="calm-down"></div>
+      </div>
+    </div>
+    <!-- Блок 03 -->
+    <div class="item03">
+      <div class="window-bar">
+        <p>оцени своё состояние</p>
+        <div class="icon-wrapper">
+          <div class="hide-icon"></div>
+          <div class="close-icon"></div>
+        </div>
+      </div>
+      <div class="i3-content">
+        <div class="i3-wrapper">
+          <div class="progress-bar">
+            <div class="pg-bar_item"></div>
+            <div class="pg-bar_item"></div>
+            <!-- <div class="pg-bar_item"></div>
+            <div class="pg-bar_item"></div>
+            <div class="pg-bar_item"></div>
+            <div class="pg-bar_item"></div>
+            <div class="pg-bar_item"></div>
+            <div class="pg-bar_item"></div>
+            <div class="pg-bar_item"></div>
+            <div class="pg-bar_item"></div> -->
+          </div>
+          <div class="question"></div>
+        </div>
+        <div class="status-mood">
+          <h1 class="hwhite">Состояние: 20/100</h1>
+        </div>
+        <div class="speech-block">
+          <h1 class="hwhite">Может не стоит так делать?</h1>
+        </div>
+      </div>
+    </div>
+    <!-- Блок 04 -->
     <div class="item04">
       <div class="window-bar">
-        <p>Соглашение</p>
+        <p>соглашение</p>
+        <div class="icon-wrapper">
+          <div class="hide-icon"></div>
+          <div class="close-icon"></div>
+        </div>
+      </div>
+      <div class="i4-content">
+        <div class="i4-row">
+          <h1>Поставь галочку, <br> тебе же не трудно.</h1>
+          <div class="question"></div>
+        </div>
+        <div class="i4-row2">
+          <h2 class="hgrey">Я согласен</h2>
+          <div class="i4-checkbox"></div>
+        </div>
       </div>
     </div>
     <div class="item05">
       <div class="window-bar">
         <p>Действия</p>
+        <div class="icon-wrapper">
+          <div class="hide-icon"></div>
+          <div class="close-icon"></div>
+        </div>
+      </div>
+      <div class="i5-content">
+        <div class="i5-btn-happy"></div>
+        <div class="i5-btn-sad"></div>
+        <div class="btn-arrow-container">
+          <div class="i5-arrow-next"></div>
+        </div>
       </div>
     </div>
-  </div>
-  <!-- Третья строчка-->
-  <div class="grid-wrapper">
     <div class="item06">
       <div class="window-bar">
-        <p>Цветы.gif</p>
+        <p>цветы.gif</p>
+        <div class="icon-wrapper">
+          <div class="hide-icon"></div>
+          <div class="close-icon"></div>
+        </div>
       </div>
     </div>
     <div class="item07">
       <div class="window-bar">
-        <p>Бегущая строка</p>
+        <p>бегущая строка</p>
+        <div class="icon-wrapper">
+          <div class="hide-icon"></div>
+          <div class="close-icon"></div>
+        </div>
+      </div>
+      <div class="i7-content">
+        <div class="running-row"></div>
       </div>
     </div>
-    <!-- Четвертая строчка -->
     <div class="item08">
       <div class="window-bar">
-        <p>Загрузка...</p>
+        <p>загрузка</p>
+        <div class="icon-wrapper">
+          <div class="hide-icon"></div>
+          <div class="close-icon"></div>
+        </div>
+      </div>
+      <div class="i8-content">
+        <div class="c2-wrapper">
+          <h1 class="hwhite">70%</h2>
+          <div class="loading-bar">
+            <div class="loading-status"></div>
+            <div class="loading-status"></div>
+            <div class="loading-status"></div>
+            <div class="loading-status"></div>
+            <div class="loading-status"></div>
+            <div class="loading-status"></div>
+            <div class="loading-bar-process"></div>
+          </div>
+          <div class="txt-wrapper">
+            <h2 class="hwhite">И что делать дальше?</h2>
+            <div class="arrow_loading"></div>
+        </div>
+        </div>
+        <div class="q-wrapper">
+          <div class="question"></div>
+        </div>
       </div>
     </div>
     <div class="item09">
       <div class="window-bar">
-        <p>Глаза.gif</p>
+        <p>глаза.gif</p>
+        <div class="icon-wrapper">
+          <div class="hide-icon"></div>
+          <div class="close-icon"></div>
+        </div>
       </div>
     </div>
-    <!-- Пятая строчка -->
     <div class="item10">
       <div class="window-bar">
         <p>Как прошёл твой день</p>
+        <div class="icon-wrapper">
+          <div class="hide-icon"></div>
+          <div class="close-icon"></div>
+        </div>
       </div>
+      <div class="i10-content">
+        <div class="row-block1">
+            <div class="row-bl-container">
+              <h1>Сегодня</h1>
+              <div class="swp-containter">
+              </div>
+            </div>
+          <div class="question"></div>
+        </div>
+        <div class="row-block">
+          <h1>И я почувствовал себя</h1>
+        </div>
+        <div class="row-block">
+          <h1>Неожиданно</h1>
+          <div class="swp-containter">
+          </div>
+        </div>
+    </div>
     </div>
     <div class="item11">
       <div class="window-bar">
-        <p>Выбери</p>
+        <p>выбери</p>
+        <div class="icon-wrapper">
+          <div class="hide-icon"></div>
+          <div class="close-icon"></div>
+        </div>
+      </div>
+      <div class="i11-content">
+        <div class="icon-box-wrapper">
+          <div class="icon-box ib-sun"></div>
+          <div class="icon-box ib-anxiety"></div>
+        </div>
+        <div class="btn-cover">
+          <div class="i11-btn-l">
+            <div class="i5-arrow-next ar-rotate"></div>
+          </div>
+          <div class="i11-btn-r">
+            <div class="i5-arrow-next"></div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
+</div>
   </body>
 </html>
