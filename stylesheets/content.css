@@ -93,6 +93,11 @@ h2{
   width: 4.16vw;
   height: 4.16vw;
 }
+.reboot_container{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
 .question:hover{
   background-image: url('../images/quizz_hover.svg');
 }
@@ -120,9 +125,9 @@ h2{
 .alt1-content{
   height: 100%;
   width: 95%;
+  display: flex;
   position: relative;
   padding: 1.042vw;
-  background-color: red;
 }
 .i1-row{
   display: flex;
@@ -317,12 +322,16 @@ h2{
   margin-top: 2vw;
 }
 .i4-content{
-  position: relative;
   height: 89%;
   padding: 1.56vw;
   flex-direction: column;
   display: flex;
   /* justify-content: space-between */
+}
+.alt4-content{
+  height: 89%;
+  padding: 1.56vw;
+  background-color: red;
 }
 .i4-checkbox{
   width: 3.125vw;

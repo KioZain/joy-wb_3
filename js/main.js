@@ -40,7 +40,7 @@ $(document).ready(function() {
 		}
 	});
 // Question 01
-	$(".question").click(function openPop() {
+	$(".get1").click(function openPop() {
 		$(".i1-content").addClass("d-none");
 		$(".alt1-content").toggleClass("d-none")
 	});
