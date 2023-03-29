@@ -56,15 +56,15 @@ $(document).ready(function() {
 //Window 04
 	$(".get4").click(function open() {
 		$(".i4-content").toggleClass("d-none");
-		$(".alt4-content").toggleClass("d-none")
-	})
-
+		$(".alt4-content").toggleClass("d-none");
+	});
+	
 
 // Windows 10 ))))))))
 	$(function() {
-	 	$(".icon-box").draggable();
- 	});
-
+	 	$(".icon-box").draggable({ cursorAt: { bottom: 0 }
+		});
+	});
 
 
 

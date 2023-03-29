@@ -80,7 +80,7 @@ h2{
 .question{
   background-image: url('../images/quizz.svg');
   background-repeat: no-repeat;
-  background-size: auto 100%;
+  background-size: cover;
   position: relative;
   width: 4.16vw;
   height: 4.16vw;
@@ -88,7 +88,7 @@ h2{
 .reboot{
   background-image: url('../images/reboot.svg');
   background-repeat: no-repeat;
-  background-size: auto 100%;
+  background-size: cover;
   position: relative;
   width: 4.16vw;
   height: 4.16vw;
@@ -143,7 +143,7 @@ h2{
   position: relative;
   margin: 0.625vw;
   background-repeat: no-repeat;
-  background-size: auto 100%;
+  background-size: cover;
 }
 
 .calmness{
@@ -299,7 +299,7 @@ h2{
 .i4-quizz{
   background-image: url('../images/quizz.svg');
   background-repeat: no-repeat;
-  background-size: auto 100%;
+  background-size: cover;
   position: relative;
   width: 4.16vw;
   height: 4.16vw;
@@ -331,15 +331,15 @@ h2{
 .alt4-content{
   height: 89%;
   padding: 1.56vw;
-  background-color: red;
-}
+  display: flex;
+  }
 .i4-checkbox{
   width: 3.125vw;
   height: 3.125vw;
   position: relative;
   background-image: url('../images/checkbox_none.svg');
   background-repeat: no-repeat;
-  background-size: auto 100%;
+  background-size: cover;
   margin-left: 0.313vw;
 }
 .item05 {
@@ -360,14 +360,14 @@ h2{
   height: 6.25vw;
   background-image: url('../images/btn_happy.svg');
   background-repeat: no-repeat;
-  background-size: auto 100%;
+  background-size: cover;
 }
 .i5-btn-sad{
   width: 21.87vw;
   height: 6.25vw;
   background-image: url('../images/btn_sad.svg');
   background-repeat: no-repeat;
-  background-size: auto 100%;
+  background-size: cover;
 }
 .btn-arrow-container{
   width: 2.65vw;
@@ -384,7 +384,7 @@ h2{
   width: 1.56vw;
   background-image: url('../images/arrow_next.svg');
   background-repeat: no-repeat;
-  background-size: auto 100%;
+  background-size: cover;
 }
 .ar-rotate{
   transform: rotate(180deg);
@@ -413,7 +413,7 @@ h2{
   position: absolute;
   animation: rowmove 3s linear infinite;
   background-repeat: no-repeat;
-  background-size: auto 100%;
+  background-size: cover;
 }
 .i7-content{
   display: flex;
@@ -460,7 +460,7 @@ h2{
   width: 1.56vw;
   background-image: url('../images/arrow_next.svg');
   background-repeat: no-repeat;
-  background-size: auto 100%;
+  background-size: cover;
   transform: rotate(90deg);
 }
 .loading-bar{
@@ -559,7 +559,7 @@ h2{
   width: 27.083vw;
   height: 7.2vw;
   background-repeat: no-repeat;
-  background-size: auto 100%;
+  background-size: cover;
 }
 .ib-sun{
   background-image: url('../images/icon_box_sun.svg');
@@ -618,14 +618,14 @@ h2{
   background-image: url('../images/hide.svg');
   background-repeat: no-repeat;
   display: inline-block;
-  background-size: auto 100%;
+  background-size: cover;
 }
 .close-icon{
   width: 2.6vw;
   height: 2.6vw;
   background-image: url('../images/close.svg');
   background-repeat: no-repeat;
-  background-size: auto 100%;
+  background-size: cover;
   display: inline-block;
 }
 .d-none{
