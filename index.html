@@ -10,11 +10,35 @@
     <script src="js/main.js"></script>
   </head>
   <body>
+    <div class="warning d-none">
+      <h1>Внимание!</h1>
+      <div class="alertBox">
+        <div class="alert"></div>
+        <div class="alert"></div>
+        <div class="alert"></div>
+      </div>
+      <p class="hgrey">Зафиксировано нарушение <br> в работе системы </p>
+
+      <div class="btnWrapper">
+        <p id="close"class="hblue underline">Закрыть</p>
+        <div class="hov сrashBtn"><p class="hgrey">Продолжить</p></div>
+      </div>
+    </div>
+    <div class="fatalError d-none">
+      .<div class="fatalErrorContent">
+        <h1 class="giantTxt">ERROR404</h1>
+        <h1>Ну вот,всё сломалось:(</h1>
+        <div id="refresh"class="restartBtn hov">
+          <h1 class="hwhite">Restart</h1>
+        </div>
+      </div>
+    </div>
     <div class="popup d-none">
       <div class="popcontent">
-        <p p class="hgrey">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et porro magnam quo fugiat,
-          incidunt facilis, dolorum eius, cumque harum vitae assumenda.</p>
-          <div class="closebtn hov"><p class="hgrey">Закрыть</p></div>
+        <div class="story">
+          <p class="hgrey">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et porro magnam quo fugiat,
+            incidunt facilis, dolorum eius, cumque harum vitae assumenda.</p></div>
+            <div class="closebtn hov"><p class="hgrey">Закрыть</p></div>
       </div>
     </div>
   <div class="grid-wrapper">
@@ -28,9 +52,10 @@
         </div>
       </div>
       <div class="alt1-content d-none">
-        <p class="hgrey ">Солнце Ура. Наконец-то</p>
+        <p class="hgrey ">Бесконечный,залитый солнцем горизонт без единой тучки, перед которым расстилаются
+        горные хребты скал, <br>а у подножья густой,густой лес. </p>
         <div class="reboot_container">
-          <div class="reboot hov"></div>
+          <div class="reboot  hov"></div>
         </div>
 
       </div>
@@ -69,13 +94,19 @@
           <div class="close-icon"></div>
         </div>
       </div>
+      <div class="alt2-content d-none">
+        <div class="computerHappy"></div>
+      </div>
       <div class="i2-content">
-        <div class="bug1"></div>
-        <div class="bug2"></div>
-        <div class="bug3"></div>
-        <div class="bug4"></div>
-        <div class="bug5"></div>
-        <div class="calm-down"></div>
+        <div class="dl bug1"></div>
+        <div class="dl bug2"></div>
+        <div class="dl bug3"></div>
+        <div class="dl bug4"></div>
+        <div class="dl bug5"></div>
+        <div class="dl bug6"></div>
+        <div class="dl bug7"></div>
+        <div class="dl bug8"></div>
+        <div class="hov calm-down"></div>
       </div>
     </div>
     <!-- Блок 03 -->
@@ -87,27 +118,30 @@
           <div class="close-icon"></div>
         </div>
       </div>
+      <div class="alt3-content d-none">
+        <p class="hwhite">Я так долго работал над своим состоянием
+          и хорошим настроением...Не хочу погружаться вновь <br> в печаль.</p>
+        <div class="reboot_container">
+          <div class="reboot hov"></div>
+        </div>
+      </div>
       <div class="i3-content">
         <div class="i3-wrapper">
-          <div class="progress-bar">
-            <div class="pg-bar_item"></div>
-            <div class="pg-bar_item"></div>
-            <!-- <div class="pg-bar_item"></div>
-            <div class="pg-bar_item"></div>
-            <div class="pg-bar_item"></div>
-            <div class="pg-bar_item"></div>
-            <div class="pg-bar_item"></div>
-            <div class="pg-bar_item"></div>
-            <div class="pg-bar_item"></div>
-            <div class="pg-bar_item"></div> -->
+          <div id="bar" class="progress-bar">
+            <div class="pgBarItem"></div>
+            <div class="pgBarItem "></div>
+            <div class="pgBarItem"></div>
+            <div class="pgBarItem "></div>
+            <div class="pgBarIte process"></div>
           </div>
-          <div class="question"></div>
+          <div class="get3 question hov"></div>
         </div>
         <div class="status-mood">
-          <h1 class="hwhite">Состояние: 20/100</h1>
+          <h1 class="hwhite">Состояние: <span id="input">0</span></h1>
         </div>
         <div class="speech-block">
-          <h1 class="hwhite">Может не стоит так делать?</h1>
+          <div class="change5">
+          <h1 class="hwhite">Сегодня явно всё идёт не так как хотелось</h1></div>
         </div>
       </div>
     </div>
@@ -121,18 +155,24 @@
         </div>
       </div>
         <div class="alt4-content d-none">
-          <p class="hgrey">Lorem ipsum dolor sit amet,
-            consectetur adipisicing elit, sed do eiusmod
-            Ftempor incididunt ut labore</p>
+          <p class="hgrey">По правде говоря, я не знаю точно,что
+          это такое и с чем мне предстоит соглашаться.Так что я бы
+        не стал этого делать.Неизвестно к чему это может привести. Хотя...</p>
+            <div class="reboot_container">
+              <div class="reboot get4"></div>
+            </div>
         </div>
       <div class="i4-content">
         <div class="i4-row">
-          <h1>Поставь галочку, <br> тебе же не трудно.</h1>
-          <div class="get4 question hov"></div>
+          <div class="change"><h1>Поставь галочку,
+            <br> тебе же не <span class="underline" id="check">трудно</span>.</h1></div>
+            <div class="quizz_container">
+              <div class="get4 question hov"></div>
+            </div>
         </div>
         <div class="i4-row2">
           <h2 class="hgrey">Я согласен</h2>
-          <div class="i4-checkbox hov"></div>
+          <div class="i4-checkbox status hov"></div>
         </div>
       </div>
     </div>
@@ -145,11 +185,8 @@
         </div>
       </div>
       <div class="i5-content">
-        <div class="i5-btn-happy"></div>
-        <div class="i5-btn-sad"></div>
-        <div class="btn-arrow-container">
-          <div class="i5-arrow-next"></div>
-        </div>
+        <div id="increase"class=" hov i5-btn-happy"></div>
+        <div id="decrease"class="hov i5-btn-sad"></div>
       </div>
     </div>
     <div class="item06">
@@ -159,6 +196,9 @@
           <div class="hide-icon"></div>
           <div class="close-icon"></div>
         </div>
+      </div>
+      <div class="i6-content">
+        <div class="flowers"></div>
       </div>
     </div>
     <div class="item07">
@@ -183,23 +223,22 @@
       </div>
       <div class="i8-content">
         <div class="c2-wrapper">
-          <h1 class="hwhite">70%</h2>
+          <div class="change3"><h1 class="hwhite">70%</h2></div>
           <div class="loading-bar">
             <div class="loading-status"></div>
             <div class="loading-status"></div>
             <div class="loading-status"></div>
             <div class="loading-status"></div>
             <div class="loading-status"></div>
-            <div class="loading-status"></div>
-            <div class="loading-bar-process"></div>
+            <div class="loading-status first process"></div>
+            <div class="loading-status second d-none"></div>
+            <div class="loading-status third d-none"></div>
+            <div class="loading-status fourth d-none"></div>
           </div>
           <div class="txt-wrapper">
-            <h2 class="hwhite">И что делать дальше?</h2>
-            <div class="arrow_loading"></div>
+            <div class="change2"><h2 class="hwhite">И что делать дальше?</h2></div>
+            <div class="arrow_loading wait"></div>
         </div>
-        </div>
-        <div class="q-wrapper">
-          <div class="question"></div>
         </div>
       </div>
     </div>
@@ -211,6 +250,7 @@
           <div class="close-icon"></div>
         </div>
       </div>
+      <div class="i9-content"></div>
     </div>
     <div class="item10">
       <div class="window-bar">
@@ -224,41 +264,37 @@
         <div class="row-block1">
             <div class="row-bl-container">
               <h1>Сегодня</h1>
-              <div class="swp-containter">
+              <div class="stateContainer">
+                <div class="change4"><h1></h1></div>
               </div>
             </div>
-          <div class="question"></div>
+            <div class="quizz_container">
+              <div class="question hov q10"></div>
+            </div>
         </div>
         <div class="row-block">
           <h1>И я почувствовал себя</h1>
         </div>
         <div class="row-block">
-          <h1>Неожиданно</h1>
-          <div class="swp-containter">
+          <h1>очень</h1>
+          <div class="emotionContainer win">
+            <div class="change6"><h1 class="hblue"></h1></div>
           </div>
         </div>
     </div>
     </div>
     <div class="item11">
       <div class="window-bar">
-        <p>выбери</p>
+        <p><-----</p>
         <div class="icon-wrapper">
           <div class="hide-icon"></div>
           <div class="close-icon"></div>
         </div>
       </div>
       <div class="i11-content">
-        <div class="icon-box-wrapper">
-          <div class="icon-box ib-sun"></div>
-          <div class="icon-box ib-anxiety"></div>
-        </div>
-        <div class="btn-cover">
-          <div class="i11-btn-l">
-            <div class="i5-arrow-next ar-rotate"></div>
-          </div>
-          <div class="i11-btn-r">
-            <div class="i5-arrow-next"></div>
-          </div>
+        <div class="iconBox-wrapper">
+          <div class="iconBoxSun"></div>
+          <div class="iconBoxCalmness"></div>
         </div>
       </div>
     </div>
