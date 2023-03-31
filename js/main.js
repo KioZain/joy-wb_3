@@ -1,7 +1,7 @@
 $(document).ready(function() {
-// Window 01
-// fatal error
 
+
+// fatal error
 const btn = document.querySelector("#refresh");
 btn.addEventListener("click",function(){
 	location.reload();
@@ -45,7 +45,7 @@ btn.addEventListener("click",function(){
 		if (!checkResult.includes(false)) {
 			console.log('you win')
 				$(".popup").removeClass("d-none");
-				$(".story p").text("Порой я слишком сильно увлекаюсь мыслями о прошлом.Это происходит обычно когда мало что получается в настоящем времени. Ведь раньше точно было лучше же?Правда?");
+				$(".story p").text("Порой я слишком сильно увлекаюсь мыслями о прошлом.Это происходит обычно когда мало что получается в настоящем. Разве раньше точно было лучше?Правда?");
 		}
 	});
 // Question 01
@@ -113,7 +113,7 @@ document.getElementById('increase').onclick = function(){
 	count+=10;
 	document.getElementById('input').innerHTML = count;
 	if (count <= 10) {
-		$('.change5 h1').text("Может быть и хуже в целом...");
+		$('.change5 h1').text("Может быть и хуже, в целом...");
 	}
 	if (count == 20) {
 		$('.change5 h1').text("Ну, хотя бы сегодня была не самая плохая погода");
@@ -131,7 +131,7 @@ document.getElementById('increase').onclick = function(){
 		$('.change5 h1').text("Завтра точно будет лучше,чем вчера");
 	}
 	if (count == 60) {
-		$('.change5 h1').text("Как насчёт прогулки?Я точно за!");
+		$('.change5 h1').text("Как насчёт прогулки? Я за!");
 	}
 	if (count == 70) {
 		$('.change5 h1').text("Кажется,что сегодня солнце улыбается мне! :)");
